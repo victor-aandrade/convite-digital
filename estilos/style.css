@@ -3,7 +3,10 @@
    Tema: Branca de Neve Baby
    ======================================== */
 
-/* ---------- CONFIGURAÇÕES GERAIS ---------- */
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+   ======================================== */
 
 * {
     margin: 0;
@@ -147,7 +150,7 @@ h1,
 
 
 /* ========================================
-   CAPA
+   CAPA - TELA 1
    ======================================== */
 
 .capa {
@@ -158,9 +161,6 @@ h1,
     background: #f8e8d8;
 }
 
-
-/* IMAGEM DA CAPA */
-
 .imagem-capa {
     width: 100vw;
     height: 100vh;
@@ -168,7 +168,7 @@ h1,
     display: block;
 
     object-fit: contain;
-    object-position: center;
+    object-position: center center;
 
     background: #f8e8d8;
 }
@@ -237,7 +237,7 @@ p {
 
 
 /* ========================================
-   TELA 2
+   TELA 2 - FESTA
    ======================================== */
 
 .tela-festa {
@@ -253,20 +253,22 @@ p {
     display: block;
 
     object-fit: contain;
-    object-position: center;
+    object-position: center center;
 
     background: #f8e8d8;
 }
 
 
 /* ========================================
-   TELA DE LOCALIZAÇÃO
+   TELA 3 - LOCALIZAÇÃO
    ======================================== */
 
 .tela-local {
     padding: 0;
 
     overflow: hidden;
+
+    position: relative;
 }
 
 .tela-local .imagem-tela {
@@ -275,12 +277,8 @@ p {
 
     display: block;
 
-    /*
-       CONTAIN evita cortar a imagem
-    */
     object-fit: contain;
-
-    object-position: center;
+    object-position: center center;
 
     background: #f8e8d8;
 }
@@ -307,7 +305,7 @@ p {
 }
 
 
-/* Remove decoração */
+/* Remove os enfeites */
 
 .tela-local::before,
 .tela-local::after {
@@ -334,8 +332,7 @@ p {
     display: block;
 
     object-fit: contain;
-
-    object-position: center;
+    object-position: center center;
 
     background: #f8e8d8;
 }
@@ -378,6 +375,9 @@ p {
         0 2px 8px rgba(80, 40, 20, 0.15);
 }
 
+
+/* NÚMERO */
+
 .tempo strong {
     display: block;
 
@@ -389,6 +389,9 @@ p {
 
     color: #a51e25;
 }
+
+
+/* NOME DA UNIDADE */
 
 .tempo span {
     display: block;
@@ -403,7 +406,7 @@ p {
 }
 
 
-/* Remove decoração */
+/* Remove os enfeites */
 
 .tela-contagem::before,
 .tela-contagem::after {
@@ -412,7 +415,7 @@ p {
 
 
 /* ========================================
-   TELA 5 - MENSAGEM
+   TELA 5 - MENSAGEM ESPECIAL
    ======================================== */
 
 .tela-mensagem {
@@ -427,16 +430,14 @@ p {
 
     display: block;
 
-    /*
-       ALTERADO DE COVER PARA CONTAIN
-       PARA NÃO CORTAR A ARTE
-    */
     object-fit: contain;
-
-    object-position: center;
+    object-position: center center;
 
     background: #f8e8d8;
 }
+
+
+/* Remove os enfeites */
 
 .tela-mensagem::before,
 .tela-mensagem::after {
@@ -463,8 +464,7 @@ p {
     display: block;
 
     object-fit: contain;
-
-    object-position: center;
+    object-position: center center;
 
     background: #f8e8d8;
 }
@@ -491,7 +491,7 @@ p {
 }
 
 
-/* Remove decoração */
+/* Remove os enfeites */
 
 .tela-final::before,
 .tela-final::after {
@@ -593,45 +593,120 @@ p {
 @media (max-width: 600px) {
 
     .pagina {
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+
         padding: 0;
+
+        overflow: hidden;
     }
 
-    .conteudo {
-        padding: 30px 18px;
 
-        border-radius: 25px;
+    /* ====================================
+       TELA 1 - CAPA
+       ==================================== */
+
+    .imagem-capa {
+        width: 100vw;
+        height: 100vh;
+
+        object-fit: cover;
+
+        /*
+           Mantém o centro da arte visível.
+           Podemos ajustar depois se necessário.
+        */
+        object-position: center center;
     }
 
-    p {
-        font-size: 16px;
+
+    /* ====================================
+       TELA 2 - FESTA
+       ==================================== */
+
+    .tela-festa .imagem-tela {
+        width: 100vw;
+        height: 100vh;
+
+        object-fit: cover;
+
+        /*
+           Corte central.
+        */
+        object-position: center center;
     }
 
-    .frase-convite {
-        font-size: 16px;
+
+    /* ====================================
+       TELA 3 - LOCALIZAÇÃO
+       ==================================== */
+
+    .tela-local .imagem-tela {
+        width: 100vw;
+        height: 100vh;
+
+        object-fit: cover;
+
+        object-position: center center;
     }
 
-    .informacao {
-        padding: 12px;
+
+    /* ====================================
+       TELA 4 - CONTAGEM
+       ==================================== */
+
+    .imagem-contagem {
+        width: 100vw;
+        height: 100vh;
+
+        object-fit: cover;
+
+        /*
+           Mantém o centro da arte.
+        */
+        object-position: center center;
     }
 
-    #contador {
-        gap: 5px;
+
+    /* ====================================
+       TELA 5 - MENSAGEM
+       ==================================== */
+
+    .tela-mensagem .imagem-tela {
+        width: 100vw;
+        height: 100vh;
+
+        object-fit: cover;
+
+        object-position: center center;
     }
 
-    #contador div {
-        padding: 10px 3px;
+
+    /* ====================================
+       TELA 6 - FINAL
+       ==================================== */
+
+    .imagem-final {
+        width: 100vw;
+        height: 100vh;
+
+        object-fit: cover;
+
+        /*
+           Mantém o centro da arte.
+        */
+        object-position: center center;
     }
 
-    #contador strong {
-        font-size: 23px;
-    }
 
-    #contador span {
-        font-size: 11px;
-    }
+    /* ====================================
+       CONTADOR
+       ==================================== */
 
     .contador-sobreposto {
-        width: 85%;
+        width: 88%;
+
         gap: 5px;
     }
 
@@ -645,5 +720,33 @@ p {
 
     .tempo span {
         font-size: 9px;
+    }
+
+
+    /* ====================================
+       INDICAÇÃO DE DESLIZE
+       ==================================== */
+
+    .deslize {
+        bottom: 2%;
+
+        font-size: 13px;
+
+        padding: 7px 14px;
+    }
+
+
+    /* ====================================
+       BOTÃO DA MÚSICA
+       ==================================== */
+
+    #botao-musica {
+        right: 15px;
+        top: 15px;
+
+        width: 45px;
+        height: 45px;
+
+        font-size: 20px;
     }
 }
