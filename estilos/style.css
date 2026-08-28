@@ -734,19 +734,4 @@ p {
 
         padding: 7px 14px;
     }
-
-
-    /* ====================================
-       BOTÃO DA MÚSICA
-       ==================================== */
-
-    #botao-musica {
-        right: 15px;
-        top: 15px;
-
-        width: 45px;
-        height: 45px;
-
-        font-size: 20px;
-    }
 }

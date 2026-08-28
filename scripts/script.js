@@ -223,17 +223,5 @@ function voltarInicio() {
         left: 0,
         behavior: "smooth"
     });
-    /* Toca a música no primeiro toque na tela */
-document.addEventListener("click", function iniciarAudioNoToque() {
-    if (musica.paused) {
-        musica.play().then(() => {
-            botaoMusica.textContent = "🔊";
-        }).catch(erro => {
-            console.log("Aguardando interação do usuário:", erro);
-        });
-    }
-    // Remove o evento para não tentar tocar novamente em cada clique
-    document.removeEventListener("click", iniciarAudioNoToque);
-});
 
 }
