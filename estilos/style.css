@@ -734,4 +734,12 @@ p {
 
         padding: 7px 14px;
     }
+    .imagem-capa,
+.imagem-tela,
+.imagem-contagem,
+.imagem-final {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
 }
