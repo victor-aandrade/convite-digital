@@ -6,18 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversário da Romana 👑</title>
 
-    <!-- Importando as fontes infantis -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fredoka:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
 
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
 
-    <!-- CONVITE -->
     <main class="convite">
 
         <!-- TELA 1 - CAPA -->
@@ -25,9 +22,9 @@
             <img 
                 src="imagens/capa.png" 
                 alt="Convite de aniversário de 2 anos da Romana, tema Branca de Neve Baby"
-                class="imagem-capa"
+                class="imagem-convite"
             >
-            
+            <div class="deslize">Deslize para continuar →</div>
         </section>
 
         <!-- TELA 2 - INFORMAÇÕES -->
@@ -35,52 +32,53 @@
             <img
                 src="imagens/festa.jpeg"
                 alt="Informações do aniversário de 2 anos da Romana"
-                class="imagem-tela"
+                class="imagem-convite"
             >
             <div class="deslize">Deslize para continuar →</div>
         </section>
 
         <!-- TELA 3 - LOCALIZAÇÃO -->
         <section class="pagina tela-local">
-            <img
-                src="imagens/local.png"
-                alt="Local da festa de aniversário da Romana"
-                class="imagem-tela"
-            >
-
-            <!-- Área clicável sobre o botão COMO CHEGAR -->
-            <button
-                class="botao-mapa"
-                onclick="abrirMapa()"
-                aria-label="Como chegar à Fazenda Romana">
-            </button>
+            <div class="container-imagem">
+                <img
+                    src="imagens/local.png"
+                    alt="Local da festa de aniversário da Romana"
+                    class="imagem-convite"
+                >
+                <button
+                    class="botao-mapa"
+                    onclick="abrirMapa()"
+                    aria-label="Como chegar à Fazenda Romana">
+                </button>
+            </div>
             <div class="deslize">Deslize para continuar →</div>
         </section>
 
         <!-- TELA 4 - CONTAGEM REGRESSIVA -->
         <section class="pagina tela-contagem">
-            <img
-                src="imagens/contagem.png"
-                alt="Contagem regressiva para o aniversário da Romana"
-                class="imagem-contagem"
-            >
-
-            <div class="contador-sobreposto">
-                <div class="tempo">
-                    <strong id="dias">00</strong>
-                    <span>DIAS</span>
-                </div>
-                <div class="tempo">
-                    <strong id="horas">00</strong>
-                    <span>HORAS</span>
-                </div>
-                <div class="tempo">
-                    <strong id="minutos">00</strong>
-                    <span>MINUTOS</span>
-                </div>
-                <div class="tempo">
-                    <strong id="segundos">00</strong>
-                    <span>SEGUNDOS</span>
+            <div class="container-imagem">
+                <img
+                    src="imagens/contagem.png"
+                    alt="Contagem regressiva para o aniversário da Romana"
+                    class="imagem-convite"
+                >
+                <div class="contador-sobreposto">
+                    <div class="tempo">
+                        <strong id="dias">00</strong>
+                        <span>DIAS</span>
+                    </div>
+                    <div class="tempo">
+                        <strong id="horas">00</strong>
+                        <span>HORAS</span>
+                    </div>
+                    <div class="tempo">
+                        <strong id="minutos">00</strong>
+                        <span>MINUTOS</span>
+                    </div>
+                    <div class="tempo">
+                        <strong id="segundos">00</strong>
+                        <span>SEGUNDOS</span>
+                    </div>
                 </div>
             </div>
             <div class="deslize">Deslize para continuar →</div>
@@ -90,32 +88,30 @@
         <section class="pagina tela-mensagem">
             <img
                 src="imagens/mensagem.png"
-                alt="Mensagem especial de Rosiene e Regilvan para os convidados do aniversário da Romana"
-                class="imagem-tela"
+                alt="Mensagem especial dos pais"
+                class="imagem-convite"
             >
             <div class="deslize">Deslize para continuar →</div>
         </section>
 
         <!-- TELA 6 - FINAL -->
         <section class="pagina tela-final">
-            <img
-                src="imagens/final.png"
-                alt="Mensagem final do convite de aniversário da Romana"
-                class="imagem-final"
-            >
-
-            <!-- Área clicável sobre "Voltar ao início" -->
-            <button
-                class="botao-inicio"
-                onclick="voltarInicio()"
-                aria-label="Voltar ao início do convite">
-            </button>
-            
+            <div class="container-imagem">
+                <img
+                    src="imagens/final.png"
+                    alt="Mensagem final do convite de aniversário da Romana"
+                    class="imagem-convite"
+                >
+                <button
+                    class="botao-inicio"
+                    onclick="voltarInicio()"
+                    aria-label="Voltar ao início do convite">
+                </button>
+            </div>
         </section>
 
     </main>
 
-    <!-- Chamada do arquivo JS -->
     <script src="scripts/script.js"></script>
 </body>
 
