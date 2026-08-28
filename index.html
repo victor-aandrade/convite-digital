@@ -19,49 +19,33 @@
 
         <!-- TELA 1 - CAPA -->
         <section class="pagina capa">
-            <img 
-                src="imagens/capa.png" 
-                alt="Convite de aniversário de 2 anos da Romana, tema Branca de Neve Baby"
-                class="imagem-convite"
-            >
-            <div class="deslize">Deslize para continuar →</div>
+            <div class="card-imagem">
+                <img src="imagens/capa.png" alt="Capa Convite Romana" class="imagem-tela">
+                <div class="deslize">Deslize para baixo ↓</div>
+            </div>
         </section>
 
         <!-- TELA 2 - INFORMAÇÕES -->
         <section class="pagina tela-festa">
-            <img
-                src="imagens/festa.jpeg"
-                alt="Informações do aniversário de 2 anos da Romana"
-                class="imagem-convite"
-            >
-            <div class="deslize">Deslize para continuar →</div>
+            <div class="card-imagem">
+                <img src="imagens/festa.jpeg" alt="Informações da Festa" class="imagem-tela">
+                <div class="deslize">Deslize para baixo ↓</div>
+            </div>
         </section>
 
         <!-- TELA 3 - LOCALIZAÇÃO -->
         <section class="pagina tela-local">
-            <div class="container-imagem">
-                <img
-                    src="imagens/local.png"
-                    alt="Local da festa de aniversário da Romana"
-                    class="imagem-convite"
-                >
-                <button
-                    class="botao-mapa"
-                    onclick="abrirMapa()"
-                    aria-label="Como chegar à Fazenda Romana">
-                </button>
+            <div class="card-imagem">
+                <img src="imagens/local.png" alt="Localização" class="imagem-tela">
+                <button class="botao-mapa" onclick="abrirMapa()" aria-label="Como chegar"></button>
+                <div class="deslize">Deslize para baixo ↓</div>
             </div>
-            <div class="deslize">Deslize para continuar →</div>
         </section>
 
         <!-- TELA 4 - CONTAGEM REGRESSIVA -->
         <section class="pagina tela-contagem">
-            <div class="container-imagem">
-                <img
-                    src="imagens/contagem.png"
-                    alt="Contagem regressiva para o aniversário da Romana"
-                    class="imagem-convite"
-                >
+            <div class="card-imagem">
+                <img src="imagens/contagem.png" alt="Contagem Regressiva" class="imagem-tela">
                 <div class="contador-sobreposto">
                     <div class="tempo">
                         <strong id="dias">00</strong>
@@ -73,40 +57,30 @@
                     </div>
                     <div class="tempo">
                         <strong id="minutos">00</strong>
-                        <span>MINUTOS</span>
+                        <span>MIN</span>
                     </div>
                     <div class="tempo">
                         <strong id="segundos">00</strong>
-                        <span>SEGUNDOS</span>
+                        <span>SEG</span>
                     </div>
                 </div>
+                <div class="deslize">Deslize para baixo ↓</div>
             </div>
-            <div class="deslize">Deslize para continuar →</div>
         </section>
 
         <!-- TELA 5 - MENSAGEM ESPECIAL -->
         <section class="pagina tela-mensagem">
-            <img
-                src="imagens/mensagem.png"
-                alt="Mensagem especial dos pais"
-                class="imagem-convite"
-            >
-            <div class="deslize">Deslize para continuar →</div>
+            <div class="card-imagem">
+                <img src="imagens/mensagem.png" alt="Mensagem Especial" class="imagem-tela">
+                <div class="deslize">Deslize para baixo ↓</div>
+            </div>
         </section>
 
         <!-- TELA 6 - FINAL -->
         <section class="pagina tela-final">
-            <div class="container-imagem">
-                <img
-                    src="imagens/final.png"
-                    alt="Mensagem final do convite de aniversário da Romana"
-                    class="imagem-convite"
-                >
-                <button
-                    class="botao-inicio"
-                    onclick="voltarInicio()"
-                    aria-label="Voltar ao início do convite">
-                </button>
+            <div class="card-imagem">
+                <img src="imagens/final.png" alt="Mensagem Final" class="imagem-tela">
+                <button class="botao-inicio" onclick="voltarInicio()" aria-label="Voltar ao início"></button>
             </div>
         </section>
 
