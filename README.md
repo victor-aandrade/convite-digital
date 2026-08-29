@@ -17,8 +17,6 @@ comemoração através de uma navegação por telas.
 - Git
 - GitHub
 - GitHub Pages
-- ChatGPT
-- Google Gemini AI
 
 ## ✨ Funcionalidades
 
