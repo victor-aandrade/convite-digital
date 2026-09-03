@@ -54,3 +54,22 @@ function atualizarContador() {
 
 atualizarContador();
 setInterval(atualizarContador, 1000);
+/* REDIRECIONAMENTO PARA LOJAS */
+function abrirLoja(url) {
+    window.open(url, "_blank");
+}
+
+/* ABRIR PIX COM VALOR PREDEFINIDO */
+function abrirPix(valor) {
+    // Insira a sua chave PIX aqui
+    const chavePix = "79999004276"; 
+    alert(`Chave PIX (${chavePix}) copiada! Valor selecionado: R$ ${valor},00`);
+    navigator.clipboard.writeText(chavePix);
+}
+
+/* CONFIRMAÇÃO DE PRESENÇA VIA WHATSAPP */
+function confirmarPresenca() {
+    const telefone = "5579999004276";
+    const mensagem = encodeURIComponent("Olá! Gostaria de confirmar minha presença no aniversário da Romana! 👑✨");
+    window.open(`https://wa.me/${telefone}?text=${mensagem}`, "_blank");
+}
